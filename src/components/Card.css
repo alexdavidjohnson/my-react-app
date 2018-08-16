@@ -2,10 +2,12 @@
     width: 300px;
     height: 225px;
     position: relative;
+    /*Acts as a mask*/
     overflow: hidden;
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0,0,0, 0.25);
     display: grid;
+    /*Divides the layout into two seperates the h3 and p*/
     grid-template-rows: 1fr 1fr;
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
@@ -23,6 +25,7 @@
     position: absolute;
     top: 0;
     height: 110%;
+    /*POsition absolute may make the image go on top of everything*/
     z-index: -1;
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }

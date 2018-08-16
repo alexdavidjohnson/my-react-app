@@ -1,9 +1,9 @@
-import React from 'React'
+import React from 'react'
 import './Card.css'
 
 const Card = props => (
     <div className="Card">
-        <img src='https://cl.ly/3k1F152x261C/download/wallpaper3.jpg'/>
+        <img src={props.image} />
         <h3>{props.title}</h3>
         <p>{props.text}</p>
     </div>
